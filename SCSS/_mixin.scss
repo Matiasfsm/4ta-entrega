@@ -1,0 +1,16 @@
+@mixin boxServicios ($grid){
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: left;
+    grid-area: $grid;
+}
+@mixin listaServicios{
+    color: dimgray;
+    list-style-position: inside;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

@@ -1,0 +1,337 @@
+.headerIndex {
+  width: 100%;
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3fc3c3;
+  position: sticky; }
+  .headerIndex .nav-index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .headerIndex .nav-index .nav-index__ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+      font-size: 0;
+      text-align: center;
+      margin: 20px auto;
+      width: 90%; }
+      .headerIndex .nav-index .nav-index__ul .nav-index__li {
+        display: inline-block;
+        width: 25%;
+        position: relative;
+        font-size: 20px;
+        transition: all .3s ease; }
+        .headerIndex .nav-index .nav-index__ul .nav-index__li:hover {
+          background-color: white;
+          padding: 4px;
+          border-radius: 5%; }
+        .headerIndex .nav-index .nav-index__ul .nav-index__li a {
+          text-decoration: none;
+          margin: 2rem;
+          color: white; }
+          .headerIndex .nav-index .nav-index__ul .nav-index__li a:hover {
+            color: black; }
+
+.container-fluid {
+  background-color: #3fc3c3; }
+  .container-fluid .nav-item {
+    transition: all .3s ease; }
+    .container-fluid .nav-item:hover {
+      background-color: white;
+      padding: 4px;
+      border-radius: 5%; }
+    .container-fluid .nav-item a {
+      text-decoration: none;
+      margin: 2rem;
+      color: white; }
+      .container-fluid .nav-item a:hover {
+        color: black; }
+
+.containerServicios {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "solucion innovacion estrategia nutricion"; }
+  .containerServicios .boxServicios1 {
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: left;
+    grid-area: solucion; }
+    .containerServicios .boxServicios1 .listaServicios1 {
+      color: dimgray;
+      list-style-position: inside;
+      line-height: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .containerServicios .boxServicios1 .listaServicios1 .listaServicios1__item {
+        font-size: 1.1rem; }
+    .containerServicios .boxServicios1 .titulosServicios:hover {
+      transition: 2s;
+      font-size: 2.5rem; }
+  .containerServicios .boxServicios2 {
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: left;
+    grid-area: innovacion; }
+    .containerServicios .boxServicios2 .listaServicios2 {
+      color: dimgray;
+      list-style-position: inside;
+      line-height: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .containerServicios .boxServicios2 .listaServicios2 .listaServicios2__item {
+        font-size: 1.1rem; }
+    .containerServicios .boxServicios2 .titulosServicios:hover {
+      transition: 2s;
+      font-size: 2.5rem; }
+  .containerServicios .boxServicios3 {
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: left;
+    grid-area: estrategia; }
+    .containerServicios .boxServicios3 .listaServicios3 {
+      color: dimgray;
+      list-style-position: inside;
+      line-height: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .containerServicios .boxServicios3 .listaServicios3 .listaServicios3__item {
+        font-size: 1.1rem; }
+    .containerServicios .boxServicios3 .titulosServicios:hover {
+      transition: 2s;
+      font-size: 2.5rem; }
+  .containerServicios .boxServicios4 {
+    margin: 20px;
+    margin-top: 50px;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: left;
+    grid-area: nutricion; }
+    .containerServicios .boxServicios4 .listaServicios4 {
+      color: dimgray;
+      list-style-position: inside;
+      line-height: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .containerServicios .boxServicios4 .listaServicios4 .listaServicios4__item {
+        font-size: 1.1rem; }
+    .containerServicios .boxServicios4 .titulosServicios:hover {
+      transition: 2s;
+      font-size: 2.5rem; }
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .containerServicios {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "solucion innovacion"  "estrategia nutricion"; } }
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .containerServicios {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "solucion" "innovacion"  "estrategia"  "nutricion"; } }
+
+@media (max-width: 480px) {
+  .containerServicios {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "solucion" "innovacion"  "estrategia"  "nutricion"; } }
+
+.containerContacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 2rem;
+  justify-content: space-between;
+  align-items: center; }
+  .containerContacto .boxContacto1 {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    margin-left: 25%;
+    border-radius: 5px;
+    text-align: center; }
+  .containerContacto .boxContacto2 {
+    width: 700px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 25%;
+    background-color: white;
+    transition: 1s; }
+    .containerContacto .boxContacto2:hover {
+      transform: scale(1.1, 1.1); }
+
+.containerNosotros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 2rem;
+  justify-content: space-between;
+  align-items: center; }
+  .containerNosotros .boxNosotros1 {
+    width: 100%;
+    margin: 10px;
+    margin-left: 25%;
+    padding: 5px;
+    text-align: center; }
+  .containerNosotros .boxNosotros2 {
+    width: 600px;
+    border: 2px solid black;
+    margin: 20px;
+    margin-left: 35%;
+    padding: 10px;
+    background-color: #f1ecec;
+    border-radius: 10px;
+    text-align: left; }
+    .containerNosotros .boxNosotros2 .listaNosotros {
+      color: dimgrey;
+      list-style-position: inside;
+      list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif"); }
+      .containerNosotros .boxNosotros2 .listaNosotros .listaNosotros__item {
+        font-size: 1.1rem; }
+  .containerNosotros .boxNosotros3 {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 25%;
+    text-align: center; }
+  .containerNosotros .boxNosotros4 {
+    width: 600px;
+    border: 2px solid #080808;
+    margin: 20px;
+    margin-left: 30%;
+    padding: 5px;
+    background-color: #340c68; }
+
+.containerBlog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 2rem;
+  justify-content: space-between;
+  align-items: center; }
+  .containerBlog .notas {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px; }
+    .containerBlog .notas .boxBlog1 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 20px;
+      padding: 10px;
+      text-align: center; }
+    .containerBlog .notas .boxBlog2 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      border: 1px solid black;
+      margin: 10px;
+      padding: 5px;
+      text-align: center;
+      border-radius: 5px; }
+      .containerBlog .notas .boxBlog2 .img {
+        width: 300px;
+        float: left;
+        padding: 10px; }
+    .containerBlog .notas .boxBlog3 {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
+      align-items: center; }
+    .containerBlog .notas .boxBlog4 {
+      display: flex;
+      flex-direction: row;
+      width: 10%;
+      margin: 10px;
+      padding: 10px;
+      align-items: center; }
+
+footer {
+  margin-top: 1.2rem;
+  background-color: white;
+  padding: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background: #81bbd5;
+  background: radial-gradient(circle, #81bbd5 35%, #2800ff 100%); }
+  footer .iconosRedes {
+    color: #8d8c86;
+    display: flex; }
+    footer .iconosRedes .iconosRedes img {
+      opacity: 0.8; }
+
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  background-color: #efffff;
+  font-family: 'Raleway', sans-serif; }
+  body h1 {
+    color: #8a8686;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Suez One', serif;
+    padding: 10px; }
+  body h2 {
+    color: cornflowerblue;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-family: 'Suez One', serif; }
+  body h3 {
+    font-family: 'Suez One', serif; }
+  body h4 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Suez One', serif; }
+  body p {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.5; }
+  body .bordeRedondeado {
+    border-radius: 5%; }

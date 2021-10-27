@@ -1,0 +1,56 @@
+.containerBlog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    .notas{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        .boxBlog1{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 20px;
+            padding: 10px;
+            text-align: center; 
+        }
+        .boxBlog2{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+            .img{
+                width: 300px;
+                float: left;
+                padding: 10px;   
+            }  
+        }
+        .boxBlog3{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 10px;
+            padding: 10px; 
+            align-items: center;
+        } 
+        .boxBlog4{
+            display: flex;
+            flex-direction: row;
+            width: 10%;
+            margin: 10px;
+            padding: 10px; 
+            align-items: center;
+        }       
+    }
+}

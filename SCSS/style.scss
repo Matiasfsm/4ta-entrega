@@ -1,0 +1,52 @@
+@import"variables";
+@import"mixin";
+@import"header";
+@import"servicios";
+@import"contacto";
+@import"nosotros";
+@import"blog";
+@import"footer";
+
+*{
+    margin:0%;
+    padding:0%;
+}
+body{
+    background-color:$colorPrincipal;
+    font-family: 'Raleway', sans-serif;
+    h1{
+        color: rgb(138, 134, 134);
+        font-size: 2rem;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: 'Suez One', serif;  
+        padding: 10px; 
+    }
+    h2{
+        color: cornflowerblue;
+        font-size: 2rem;
+        text-align: center;
+        font-weight:bolder;
+        text-transform: capitalize;
+        font-family: 'Suez One', serif;    
+    }
+    h3{
+        font-family: 'Suez One', serif;
+    }
+    h4{
+        font-size: 1rem;
+        text-align: center;
+        font-weight:bolder;
+        color: white;    
+        font-family: 'Suez One', serif;  
+    }
+    p{
+        font-style: italic;
+        font-size: 1rem;
+        line-height:1.5;    
+    }
+    .bordeRedondeado{
+        border-radius: 5%;
+    }    
+}
+
