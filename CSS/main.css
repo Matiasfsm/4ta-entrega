@@ -293,12 +293,7 @@ footer {
   flex-wrap: nowrap;
   justify-content: space-between;
   background: #81bbd5;
-  background: radial-gradient(circle, #81bbd5 35%, #2800ff 100%); }
-  footer .iconosRedes {
-    color: #8d8c86;
-    display: flex; }
-    footer .iconosRedes .iconosRedes img {
-      opacity: 0.8; }
+  background: radial-gradient(circle, #81bbd5 35%, #99bfdd 100%); }
 
 * {
   margin: 0%;
@@ -326,8 +321,7 @@ body {
   body h4 {
     font-size: 1rem;
     text-align: center;
-    font-weight: bolder;
-    color: white;
+    color: black;
     font-family: 'Suez One', serif; }
   body p {
     font-style: italic;
