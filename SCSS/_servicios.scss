@@ -1,6 +1,6 @@
 .containerServicios{
     display: grid;
-    justify-content: center;
+    justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "solucion innovacion estrategia nutricion";
@@ -80,7 +80,7 @@
             "solucion"
             "innovacion" 
             "estrategia" 
-            "nutricion";
+            "nutricion"; 
     }
 }
 @media (max-width: 480px) {

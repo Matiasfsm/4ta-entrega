@@ -1,8 +1,7 @@
 @mixin boxServicios ($grid){
     margin: 20px;
     margin-top: 50px;
-    margin-left: 35%;
-    padding: 10px;
+    padding: 5px;
     text-align: left;
     grid-area: $grid;
 }

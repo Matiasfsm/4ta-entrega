@@ -29,22 +29,21 @@
         .facebook:hover{
             &:hover{
                 background-color: $facebook;
-            }   
-        }
+            }     
+        }   
         .linkedin:hover{
             &:hover{
                 background-color: $linkedin;
-            }   
-        }
+            }
+        }   
         .instagram:hover{
-            &:hover{
-                background-color: $instagram;
+            &:hover{background-color: $instagram;
             }   
-        }
+        }   
         .twitter:hover{
             &:hover{
                 background-color: $twitter;
-            }   
-        }
+            }     
+        }   
     }
 }

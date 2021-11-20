@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Suez+One&display=swap" rel="stylesheet">  
@@ -14,35 +15,36 @@
     <title>Sein Food Thinking-Blog</title>
     <link rel="stylesheet" href="CSS/main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
     <div class="containerBlog">
     <!--inicio del header-->
         <header>
-            <nav class="nav-menu">
-                <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                    <label class="logo"><a href="index.html"><img src="img/logo sein.png" alt="logo sein" width="100px"> </label>
-                <ul class="nav-menu__ul">
-                    <li class="nav-menu__li"> 
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-menu__li">
-                        <a href="nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="nav-menu__li">
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-                    <li  class="nav-menu__li">
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li  class="nav-menu__li">
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(63, 195, 195)">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="img/logo sein.png" width="80px" alt="Logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header> 
         <main>
             <div>
@@ -56,29 +58,39 @@
                 <h2>
                     Notas
                 </h2>
-                </div>
-                <div class="wow boxBlog2 animate__animated animate__slideInLeft">
-                <img class="bordeRedondeado" src="img/story.jpg" alt="frutas" width="300px"/>
-                <article>Storytelling: los consumidores están cada vez más cautivados por las historias detrás de sus alimentos y bebidas.
-                </article>
-                <img class="bordeRedondeado" src="img/expectativas.png" alt="frutas" width="300px"/>
-                <article>Las expectativas de los consumidores en torno a la sostenibilidad son más altas que nunca, lo que empuja a las empresas a priorizar la ecoeficiencia.
-                </article>
+                <div class="tarjetas">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/story.jpg" class="card-img-top" alt="storytelling">
+                        <div class="card-body">
+                        <h5 class="card-title">Storytelling</h5>
+                        <p class="card-text">Los consumidores están cada vez más cautivados por las historias detrás de sus alimentos y bebidas.</p>
+                        <a href="https://www.globalalimentaria.com/blog/storytelling-para-marcas-de-alimentos-un-arma-de-seduccion-eficiente" target="_blank" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/expectativas.png" class="card-img-top" alt="Sostenibilidad">
+                        <div class="card-body">
+                        <h5 class="card-title">Sostenibilidad</h5>
+                        <p class="card-text">Las expectativas de los consumidores en torno a la sostenibilidad son más altas que nunca, lo que empuja a las empresas a priorizar la ecoeficiencia.</p>
+                        <a href="https://alimentaods.org/recursos/que-es-un-sistema-alimentario-sostenible/" target="_blank" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!--acá se encuentra los videos-->
             <section>
-                <div class="boxBlog3">
+                <div class="boxBlog2">
                     <h2>
                         Videos
                     </h2>
                 </div>
-                <div class="wow boxBlog4 animate__animated animate__zoomIn">
-                    <video src="img/comida saludable.mp4" controls>
-                    </video>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SpKYno_SV-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
+                <div class="containerVideo">
+                    <div class="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SpKYno_SV-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </iframe>
+                    </div>
                 </div>
+                <br>
             </section>
         <main> 
         <footer>
@@ -95,6 +107,8 @@
     <script src="js/wow.min.js"></script>
     <script>
        new WOW().init();
-    </script>      
+    </script>  
+    <script src="popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>    
 </body>
 </html>
